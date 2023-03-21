@@ -1,5 +1,5 @@
 # Text Analyzer With GUI
-An extended version of the [Text Analyzer Repository](https://imgur.com/2JWQQnQ) including a GUI created using JavaFX which allows the user to select the number of words they wish to see. 
+An extended version of the [Text Analyzer Repository](https://github.com/ZachK03/TextAnalyzer-CEN-3024C) including a GUI created using JavaFX which allows the user to select the number of words they wish to see. 
 
 ## Development Process
 Most of the work put into this project was designing the UI in a way that I thought looked decent. Using JavaFX before seemed to only allow for a developer to make mediocre looking UI, however, after this project I feel much more capable in terms of creating clean, aesthetic UI. 
