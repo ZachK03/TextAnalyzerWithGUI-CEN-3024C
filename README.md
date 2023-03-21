@@ -6,7 +6,12 @@ Most of the work put into this project was designing the UI in a way that I thou
 
 Most development was using SceneBuilder, however, when it came to the TableView I did have problems with adding the data to it. However, after some research I was able to figure out that I needed to use `setCellValueFactory()`.
 
-## Output
+## Screenshots
+
+<p align='center'>
+	<img src="https://imgur.com/3LUBrkH.png"><br/>
+	The main screen for the GUI application that allows users to select the number of words.
+</p>
 <p align='center'>
 	<img src="https://imgur.com/2JWQQnQ.png"><br/>
 	The output from the GUI application.
