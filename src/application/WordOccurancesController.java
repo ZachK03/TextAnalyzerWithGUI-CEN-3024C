@@ -50,7 +50,7 @@ public class WordOccurancesController {
 			return;
 		}
 		
-		String[][] result = textAnalyzer.getWordCount(numberOfWords);
+		String[][] result = textAnalyzer.getWordCount(numberOfWords,"https://www.gutenberg.org/files/1065/1065-h/1065-h.htm");
 		
 		ObservableList<String[]> data = FXCollections.observableArrayList();
 		String[] labels = {"Word","Count"};

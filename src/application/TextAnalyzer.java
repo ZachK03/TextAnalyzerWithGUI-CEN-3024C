@@ -14,11 +14,11 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class TextAnalyzer {
-	public String[][] getWordCount(int numberOfWords) {
+	public String[][] getWordCount(int numberOfWords, String site) {
 		//Connect and parse website
 		Document doc;
 		try {
-			doc = Jsoup.connect("https://www.gutenberg.org/files/1065/1065-h/1065-h.htm").get();
+			doc = Jsoup.connect(site).get();
 		} catch (IOException e) {
 			e.printStackTrace();
 			return null;
