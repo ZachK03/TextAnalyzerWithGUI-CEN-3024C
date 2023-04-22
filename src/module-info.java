@@ -3,7 +3,8 @@ module TextAnalyzerWithGUI {
 	requires javafx.graphics;
 	requires javafx.fxml;
 	requires javafx.base;
-	requires org.jsoup;
+	
+	requires java.sql;
 	
 	opens application to javafx.graphics, javafx.fxml;
 }

@@ -25,6 +25,10 @@ public class MainSceneController {
 	public Slider slider;
 	public TextField sliderNumber;
 	
+	/**
+	 * Initializes the scene. Links the slider to the text field.
+	 * 
+	 */
 	public void initialize() {
 		slider.valueProperty().addListener((observable, oldValue, newValue) -> {
 			int value = newValue.intValue();
@@ -41,11 +45,19 @@ public class MainSceneController {
 		});
 	}
 	
+	/**
+	 * Handles the close action for the X button.
+	 * @param event
+	 */
 	public void handleCloseButtonAction(ActionEvent event) {
 		Stage stage = (Stage) closeButton.getScene().getWindow();
 		stage.close();
 	}
 	
+	/**
+	 * Handles adjusting the slider from the text field.
+	 * @param event
+	 */
 	public void handleSliderTextValueChanged(ActionEvent event) {
 		String text = sliderNumber.getText();
 		int value = Integer.parseInt(text);
@@ -58,6 +70,10 @@ public class MainSceneController {
 		}
 	}
 	
+	/**
+	 * Handles the confirm button and transfers to the next scene.
+	 * @param event
+	 */
 	public void handleConfirmButtonAction(ActionEvent event) {
 		int value = (int)slider.getValue();
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("WordOccurances.fxml"));

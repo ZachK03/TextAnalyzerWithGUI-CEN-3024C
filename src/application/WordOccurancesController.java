@@ -32,19 +32,34 @@ public class WordOccurancesController {
 	private int numberOfWords;
 	public TextAnalyzer textAnalyzer = new TextAnalyzer();
 	
+	/**
+	 * Handles the close button.
+	 * @param event
+	 */
 	public void handleCloseButtonAction(ActionEvent event) {
 		Stage stage = (Stage) closeButton.getScene().getWindow();
 		stage.close();
 	}
 	
+	/**
+	 * Sets the numberOfWords variable to the passed value.
+	 * @param value
+	 */
 	public void setNumberOfWords(int value) {
 		numberOfWords = value;
 	}
 	
+	/**
+	 * Returns the number of words
+	 * @return numberOfWords (int)
+	 */
 	public int getNumberOfWords() {
 		return numberOfWords;
 	}
 	
+	/**
+	 * Main function of the scene. Gets the word counts from the site and adds it to the display.
+	 */
 	public void getWordOccurances() {
 		if(numberOfWords <= 0) {
 			return;
@@ -68,6 +83,10 @@ public class WordOccurancesController {
 		wordsTable.setItems(data);
 	}
 	
+	/**
+	 * Sends the user back to the main scene when pressed.
+	 * @param event
+	 */
 	public void restartApp(ActionEvent event) {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScene.fxml"));
 		try {
